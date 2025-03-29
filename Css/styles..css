@@ -1,0 +1,214 @@
+/* Estilo general del body */
+body {
+  background-color: rgb(37, 37, 37); /* Color de fondo gris oscuro */
+  margin: 0; /* Elimina márgenes predeterminados del body */
+  padding: 0; /* Elimina el padding predeterminado */
+}
+
+/* Estilo para el menú principal */
+.menuCSS3 {
+  display: flex; /* Utiliza Flexbox para la disposición de los elementos */
+  margin: 0; /* Elimina los márgenes */
+  padding: 0; /* Elimina el padding */
+  width: 100%; /* Hace que el menú ocupe todo el ancho de la pantalla */
+}
+
+/* Estilo para la lista dentro del menú */
+.menuCSS3 ul {
+  display: flex; /* Utiliza Flexbox para los elementos dentro de la lista */
+  width: 100%; /* Asegura que ocupe todo el ancho */
+  padding: 0; /* Elimina padding */
+  margin: 0; /* Elimina margen */
+  list-style: none; /* Elimina el estilo de lista predeterminado */
+}
+
+/* Estilo para cada ítem de la lista */
+.menuCSS3 ul li {
+  flex: 1; /* Distribuye los ítems de manera equitativa */
+  text-align: center; /* Centra el texto dentro del ítem */
+  position: relative; /* Necesario para posicionar el submenú */
+  margin: 0; /* Elimina margen */
+}
+
+/* Estilo para los enlaces dentro del menú */
+.menuCSS3 a {
+  display: block; /* Hace que el enlace ocupe todo el espacio disponible en el ítem */
+  padding: 2em 1em; /* Ajusta el padding vertical y horizontal */
+  background-color: rgb(42, 144, 212); /* Color de fondo de los enlaces */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: #191C26; /* Color del texto */
+  transition: background-color 0.3s; /* Transición suave al cambiar el color de fondo */
+}
+
+/* Estilo para el hover (cuando el ratón pasa sobre el enlace) */
+.menuCSS3 a:hover {
+  background-color: #0099ff; /* Cambia el color de fondo al pasar el mouse */
+}
+
+/* Estilo para el submenú */
+.menuCSS3 ul li ul {
+  display: none; /* Inicialmente oculta el submenú */
+  position: absolute; /* Posiciona el submenú debajo del ítem */
+  top: 100%; /* Coloca el submenú debajo del ítem principal */
+  left: 0; /* Alinea el submenú con el ítem principal */
+  padding: 0; /* Elimina el padding */
+  margin: 0; /* Elimina el margen */
+  list-style: none; /* Elimina el estilo de lista */
+  background-color: #a8beaf; /* Color de fondo del submenú */
+  width: 100%; /* Hace que el submenú ocupe el 100% del ancho del ítem principal */
+}
+
+/* Muestra el submenú al pasar el ratón sobre el ítem principal */
+.menuCSS3 ul li:hover ul {
+  display: block; /* Muestra el submenú cuando el ítem principal está siendo hoverizado */
+}
+
+/* Estilo para los ítems dentro del submenú */
+.menuCSS3 ul li ul li a {
+  padding: 1.5em; /* Ajusta el padding dentro del submenú */
+}
+
+/* Estilos para pantallas pequeñas (menos de 768px de ancho) */
+@media (max-width: 768px) {
+  .menuCSS3 ul {
+    flex-direction: column; /* Cambia la dirección del menú a columna */
+    width: 100%; /* Hace que ocupe todo el ancho */
+  }
+
+  .menuCSS3 ul li {
+    width: 100%; /* Hace que cada ítem ocupe todo el ancho */
+  }
+
+  .menuCSS3 a {
+    padding: 1em; /* Ajusta el padding para pantallas pequeñas */
+    text-align: center; /* Centra el texto */
+  }
+
+  /* El submenú ya no se muestra al pasar el ratón, sino que se cambia a posición estática */
+  .menuCSS3 ul li ul {
+    position: static; /* El submenú se posiciona dentro del flujo normal */
+    display: none; /* Lo oculta en pantallas pequeñas */
+  }
+}
+
+/* Estilos para el bloque 1 (por ejemplo, un contenedor) */
+.bloque1 {
+  background-color: #486fb8; /* Color de fondo */
+  height: 500px; /* Altura del bloque */
+  margin: 10px; /* Espaciado exterior */
+}
+
+/* Estilos para el título dentro del bloque 1 */
+#title1 {
+  color: rgb(255, 255, 255); /* Color blanco para el texto */
+  font-size: 17px; /* Tamaño de fuente */
+  padding: 3px; /* Espaciado interno */
+  font-family: cursive; /* Fuente cursiva */
+  text-align: center; /* Centrado del texto */
+  border: black 10px; /* Borde negro grueso alrededor */
+}
+
+/* Estilos para los párrafos dentro de #css */
+#css {
+  color: rgb(0, 0, 0); /* Color del texto (negro) */
+  font-size: 17px; /* Tamaño de fuente */
+  padding: 3px; /* Espaciado interno */
+  font-family: cursive; /* Fuente cursiva */
+  text-align: center; /* Centrado del texto */
+}
+
+/* Estilos para las imágenes dentro de #Imagen1 */
+#Imagen1 {
+  text-align: center; /* Centra la imagen */
+  display: block; /* Asegura que la imagen sea un bloque */
+  margin: auto; /* Centra la imagen automáticamente */
+  width: 300px; /* Define el ancho de la imagen */
+  margin: auto; /* Asegura que esté centrada */
+  transform: all 300ms; /* Añade una transición suave para transformaciones */
+}
+
+/* Efecto de hover en la imagen */
+#Imagen1:hover {
+  transform: scale(1.15); /* Aumenta el tamaño de la imagen al pasar el ratón */
+}
+
+/* Estilos para las imágenes dentro de #Imagen2 (igual que #Imagen1) */
+#Imagen2 {
+  text-align: center; /* Centra la imagen */
+  display: block; /* Hace que la imagen sea un bloque */
+  margin: auto; /* Centra la imagen */
+  width: 300px; /* Define el ancho de la imagen */
+  transform: all 300ms; /* Añade una transición suave para transformaciones */
+}
+
+/* Efecto de hover en la imagen */
+#Imagen2:hover {
+  transform: scale(1.15); /* Aumenta el tamaño de la imagen al pasar el ratón */
+}
+
+/* Estilos para el bloque 2 (similar al bloque 1) */
+.bloque2 {
+  background-color: #486fb8; /* Color de fondo */
+  height: 500px; /* Altura del bloque */
+  margin: 10px; /* Espaciado exterior */
+}
+
+/* Estilos para el título dentro del bloque 2 */
+#title2 {
+  color: rgb(255, 255, 255); /* Color blanco para el texto */
+  font-size: 17px; /* Tamaño de fuente */
+  padding: 3px; /* Espaciado interno */
+  font-family: cursive; /* Fuente cursiva */
+  text-align: center; /* Centrado del texto */
+}
+
+/* Estilos para los párrafos dentro de #java */
+#java {
+  color: rgb(0, 0, 0); /* Color negro para el texto */
+  font-size: 17px; /* Tamaño de fuente */
+  padding: 3px; /* Espaciado interno */
+  font-family: cursive; /* Fuente cursiva */
+  text-align: center; /* Centrado del texto */
+}
+
+/* Estilos generales para las tablas */
+.table {
+  background-color: rgb(188, 209, 228); /* Color de fondo de las tablas */
+  width: 100%; /* Hace que la tabla ocupe todo el ancho */
+  margin: 10px; /* Espaciado exterior */
+  text-align: center;/*Centra todo el contenido de la carpeta*/
+}
+
+/* Estilos para el título de la tabla */
+#titulos {
+  background-color: rgb(98, 153, 204); /* Color de fondo del encabezado */
+}
+
+/* Estilos para las celdas y bordes de la tabla */
+th, tr, td {
+  border: 1px solid rgb(20, 22, 114); /* Bordes de las celdas */
+}
+
+/* Estilos para pantallas más pequeñas (menos de 720px de ancho) */
+@media (max-width: 720px) {
+  .table {
+    display: block; /* Hace que la tabla sea un bloque */
+  }
+  tr {
+    display: flex; /* Muestra las filas como elementos flex */
+    flex-direction: column; /* Apila las celdas de manera vertical */
+  }
+}
+
+/* Estilos para las imágenes dentro de la tabla */
+#imagenestablas {
+  max-width: 100px; /* Limita el ancho máximo de la imagen */
+  display: block; /* Hace que la imagen sea un bloque */
+  margin: auto; /* Centra la imagen */
+  transform: all 300ms; /* Añade transición suave para transformaciones */
+}
+
+/* Efecto hover en las imágenes dentro de la tabla */
+#imagenestablas:hover {
+  transform: scale(1.15); /* Aumenta el tamaño de la imagen al pasar el ratón */
+}

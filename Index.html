@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina web</title>
+    <link rel="stylesheet" href="Css/styles..css">
+</head>
+<body>
+    <div class="Blockmenu">
+        <nav class="menuCSS3">
+            <ul>
+                <li><a href="#">inicio</a></li>
+                <li><a href="#">Css</a>
+                    <ul>
+                        <li><a href="#title1">¿Que es Css?
+                        </a></li>
+                        <li><a href="#Imagen1">Imagenes</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">JavaScript</a>
+                    <ul>
+                        <li><a href="#title2">¿Que es JavaScript?</a></li>
+                        <li> <a href="#Imagen2">Imagenes</a></li>
+                    </ul>
+                </li>
+                <li><a href="#titulos">Tabla de Atributos CSS</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="blocks">
+        <div class="bloque1">
+            <h1><p id="title1">¿Que es Css?</p></h1>
+            <p id="css">CSS significa Cascading Style Sheets (Hojas de Estilo en Cascada). Es un lenguaje usado para diseñar y dar estilo a las páginas web. Mientras HTML estructura el contenido, CSS se encarga de la apariencia, como los colores, las fuentes, el diseño, el tamaño de los elementos y cómo se distribuyen en la pantalla. <br> <br>CSS es esencial en el desarrollo web porque permite diseñar páginas atractivas, adaptarlas a cualquier dispositivo, separar el contenido del diseño, garantizar consistencia, mejorar la velocidad de carga y añadir animaciones. Sin CSS, las páginas serían simples y sin estilo.</p>
+            <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank"><img id="Imagen1" src="Multimedia/Imagen-css.webp" ></a>
+        </div>
+        <div class="bloque2">
+            <h1><p id="title2">¿Que es JavaScrip?</p></h1>
+            <p id="java">JavaScript es un lenguaje de programación que permite agregar interactividad y dinamismo a las páginas web, como animaciones, manejo de eventos y comunicación con servidores. Es clave para que los sitios sean interactivos. <br> <br>JavaScript es esencial en el desarrollo web porque permite agregar interactividad, realizar actualizaciones dinámicas, manejar eventos, crear animaciones y conectar con servidores para obtener o enviar datos. Sin JavaScript, los sitios web serían estáticos y poco interactivos.</p>
+            <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank"><img id="Imagen2" src="Multimedia/Imajen-JavaScript.png"></a>
+        </div>
+    </div>
+        <table class="table">
+            <tr id="titulos">
+                <th>Numero del atributo</th>
+                <th>Nombre del atributo</th>
+                <th>Descripción</th>
+                <th>Valores posibles</th>
+                <th>Ejemplo de uso</th>
+                <th>Imagen representativa </th>
+                <th>Fuente de información</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>font-size</td>
+                <td>Define el tamaño del texto. Se puede especificar en unidades como px, %, em, rem, etc.</td>
+                <td>12px, 1.2em, 100%, large, small.</td>
+                <td>font-size: 18px;</td>
+                <button></button>
+                <td><img src="Multimedia/Fotos De tabla/font-size.jpg" id="imagenestablas"></td>
+                <td><a href="https://www.w3schools.com/css/css3_flexbox_responsive.asp" target="_blank">w3schools.com</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>border-radius</td>
+                <td>Redondea las esquinas de un elemento. Valores más altos hacen las esquinas más curvas.</td>
+                <td>5px, 50%, 10em, 0.</td>
+                <td>border-radius: 10px;</td>
+                <img src="" alt="">
+                <td><img  src="Multimedia/Fotos De tabla/border-radius.png" id="imagenestablas"></td>
+                <td><a href="https://stackoverflow.com/questions/63880338/perfectly-rouded-border-radius-for-flexbox-items" target="_blank">stackoverflow.com</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>display</td>
+                <td>Controla cómo se muestran los elementos (bloque, en línea, flex, grid, etc.).</td>
+                <td>block, inline, flex, grid, none.</td>
+                <td>display: flex;</td>
+                <td><img  src="Multimedia/Fotos De tabla/display.png" id="imagenestablas"></td>
+                <td><a href="https://www.w3schools.com/css/css3_flexbox_responsive.asp" target="_blank">w3schools.com</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>flexbox (display: flex;)</td>
+                <td>Permite alinear y distribuir elementos en un contenedor flexible</td>
+                <td>justify-content: center;, align-items: flex-start;, flex-direction: row;.</td>
+                <td>display: flex; justify-content: center; align-items: flex-start;</td>
+                <td><img  src="Multimedia/Fotos De tabla/flexbox.gif" id="imagenestablas"></td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Aligning_items_in_a_flex_container" target="_blank">developer.mozilla.org</a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>position</td>
+                <td>Define cómo se posiciona un elemento (estática, relativa, absoluta, fija).</td>
+                <td>static, relative, absolute, fixed, sticky.</td>
+                <td>position: absolute; top: 50px; left: 100px;</td>
+                <td><img  src="Multimedia/Fotos De tabla/position.png" id="imagenestablas"></td>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/position" target="_blank">developer.mozilla.org</a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>box-shadow</td>
+                <td>Agrega sombras a un elemento, incluyendo color, desplazamiento y desenfoque.</td>
+                <td>5px 5px 10px rgba(0,0,0,0.5), none, 0px 4px 6px #aaa.</td>
+                <td>box-shadow: 5px 5px 10px rgba(0,0,0,0.5);</td>
+                <td><img  src="Multimedia/Fotos De tabla/box-shadow.png" id="imagenestablas"></td>
+                <td><a href="https://stackoverflow.com/questions/67992902/border-radius-and-box-shadow-attributes-doesnt-affect-the-code" target="_blank">stackoverflow.com</a></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>overflow</td>
+                <td>Controla cómo manejar el contenido que excede el área de un contenedor (ocultar, mostrar barras de desplazamiento, etc.).</td>
+                <td>hidden, scroll, visible, auto.</td>
+                <td>overflow: hidden;</td>
+                <td><img  src="Multimedia/Fotos De tabla/overflow.png" id="imagenestablas"></td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Aligning_items_in_a_flex_container" target="_blank">developer.mozilla.org</a></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>z-index</td>
+                <td>Establece el orden de apilamiento de elementos, determinando qué está "encima"</td>
+                <td>1, 10, 999, -1.</td>
+                <td>z-index: 999;</td>
+                <td><img  src="Multimedia/Fotos De tabla/z-index.png" id="imagenestablas"></td>
+                <td><a href="https://es.stackoverflow.com/questions/322814/alineaci%c3%b3n-de-elementos-con-flexbox" target="_blank">stackoverflow.com</a></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>opacity</td>
+                <td>Ajusta la transparencia de un elemento (0 = transparente, 1 = opaco).</td>
+                <td>0.5, 1, 0, 0.75.</td>
+                <td>opacity: 0.7;</td>
+                <td><img  src="Multimedia/Fotos De tabla/opacity.png" id="imagenestablas"></td>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/opacity" target="_blank">developer.mozilla.org</a></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>margin y padding</td>
+                <td>Margin ajusta el espacio exterior, y padding el espacio interior de un elemento.</td>
+                <td>10px, 2em, 5%, auto, 0.</td>
+                <td>margin: 20px; padding: 10px;</td>
+                <td><img  src="Multimedia/Fotos De tabla/margin y padding.png" id="imagenestablas"></td>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/margin" target="_blank">developer.mozilla.org</a></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>background-color</td>
+                <td>Define el color de fondo de un elemento.</td>
+                <td>#FF0000 (rojo), rgb(255,255,255) (blanco), transparent.</td>
+                <td>background-color: #f3f3f3;</td>
+                <td><img  src="Multimedia/Fotos De tabla/background-color.png" id="imagenestablas"></td>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/background-color" target="_blank">developer.mozilla.org</a></td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>text-align</td>
+                <td>Controla la alineación del texto (izquierda, centrada, derecha, justificada).</td>
+                <td>left, center, right, justify.</td>
+                <td>text-align: center;</td>
+                <td><img  src="Multimedia/Fotos De tabla/text-align.png" id="imagenestablas"></td>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/text-align" target="_blank">developer.mozilla.org</a></td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>height</td>
+                <td>Establece la altura de un elemento en unidades absolutas o relativas.</td>
+                <td>100px, auto, 50%, inherit.</td>
+                <td>height: 150px;</td>
+                <td><img  src="Multimedia/Fotos De tabla/height.png" id="imagenestablas"></td>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/height" target="_blank">developer.mozilla.org</a></td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>width</td>
+                <td>Define el ancho de un elemento con las mismas opciones de unidades.</td>
+                <td>50px, 100%, auto, inherit.</td>
+                <td>width: 300px;</td>
+                <td><img  src="Multimedia/Fotos De tabla/width.png" id="imagenestablas"></td>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/width" target="_blank">developer.mozilla.org</a></td>
+            </tr>
+        </table>
+</body>
+</html> 
